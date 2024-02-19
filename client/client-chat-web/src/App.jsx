@@ -9,11 +9,13 @@ import { Container } from "react-bootstrap";
 import NavBar from "./components/NavBar";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
+import { ChatContextProvider } from "./context/chatContext";
 
 function App() {
     const { user } = useContext(AuthContext);
+    // console.log(`===>userApp: `, user);
     return (
-        <>
+        <ChatContextProvider user={user}>
             {/* APP chỉ dùng 1  component chat này để hiển thị UI thôi */}
             {/* LÚC NÀO CŨNG CÓ NavBar song rồi 3 cái ở dưới là tùy */}
             <NavBar />
@@ -31,7 +33,7 @@ function App() {
                     <Route path="*" element={user ? <Chat /> : <Login />} />
                 </Routes>
             </Container>
-        </>
+        </ChatContextProvider>
     );
 }
 

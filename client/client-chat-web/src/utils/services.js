@@ -28,9 +28,13 @@ export const getRequest = async (url) => {
     try {
         const response = await fetch(`${baseUrl}${url}`);
         const data = await response.json();
+        // console.log(`===>OKE: data`, data);
+        // if(!response.oke){
+
+        // }
         return data;
     } catch (error) {
-        console.error("Error while making GET request:", error);
+        console.error("===>ERROR: LỖI KHI GET request:", error);
         throw error;
     }
 };

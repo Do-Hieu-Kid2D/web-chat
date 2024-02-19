@@ -15,7 +15,7 @@ app.use(
 );
 
 // Router
-app.use("/api/user", userRouter);
+app.use("/api/users", userRouter);
 app.use("/api/chats", chatRouter);
 app.use("/api/messages", messageRouter);
 

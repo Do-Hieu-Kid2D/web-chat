@@ -36,7 +36,7 @@ export const AuthContextProvider = ({ children }) => {
             seRegisterError(null);
             // Request
             const responseData = await postRequest(
-                "/user/register",
+                "/users/register",
                 JSON.stringify(registerInfo)
             );
             seIsRegisterLoading(false);
@@ -63,13 +63,12 @@ export const AuthContextProvider = ({ children }) => {
     const loginUser = useCallback(
         async (e) => {
             // Ngăn reload
-            console.log(`===>OKE: `, loginInfo);
             e.preventDefault();
             seIsLoginLoading(true);
             seLoginError(null);
             // Request
             const responseData = await postRequest(
-                "/user/login",
+                "/users/login",
                 JSON.stringify(loginInfo)
             );
             seIsLoginLoading(false);

@@ -6,7 +6,6 @@ import { AuthContext } from "../context/AuthContext";
 
 const NavBar = () => {
     const { user, logoutUser } = useContext(AuthContext);
-    console.log(`===>OKE: `);
 
     return (
         <Navbar bg="dark" className="mb-4" style={{ height: "3.725rem" }}>

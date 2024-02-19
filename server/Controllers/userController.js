@@ -75,6 +75,7 @@ const registerUser = async (req, res) => {
                 data: token,
                 name: newUser.name,
                 email: newUser.email,
+                id: newUser._id,
             });
         } catch {
             console.error("===>ERR: LỖI KHI TẠO TOKEN CHO USER MỚI");
@@ -120,6 +121,7 @@ const loginUser = async (req, res) => {
             data: token,
             email: user.email,
             name: user.name,
+            id: user._id,
         });
     } catch (error) {
         console.error(`===>ERROR All login: `, error);
