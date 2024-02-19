@@ -1,9 +1,19 @@
 import { Alert, Button, Form, Row, Col, Stack } from "react-bootstrap";
+import React, { useContext } from "react";
 
+import { AuthContext } from "../context/AuthContext";
 const Login = () => {
+    const {
+        user,
+        loginInfo,
+        loginError,
+        isLoginLoading,
+        updateLoginInfo,
+        loginUser,
+    } = useContext(AuthContext);
     return (
         <>
-            <Form>
+            <Form onSubmit={loginUser}>
                 <Row
                     style={{
                         height: "100vh",
@@ -13,22 +23,37 @@ const Login = () => {
                 >
                     <Col xs={6}>
                         <Stack gap={3}>
-                            <h2>Đăng nhập</h2>
+                            <h2 style={{ color: "white", textAlign: "center" }}>
+                                Đăng nhập
+                            </h2>
                             <Form.Control
                                 type="email"
                                 placeholder="Nhập emai"
+                                onChange={(e) => {
+                                    updateLoginInfo({
+                                        ...loginInfo,
+                                        email: e.target.value,
+                                    });
+                                }}
                             ></Form.Control>
                             <Form.Control
                                 type="password"
                                 placeholder="Nhập mật khẩu"
+                                onChange={(e) => {
+                                    updateLoginInfo({
+                                        ...loginInfo,
+                                        password: e.target.value,
+                                    });
+                                }}
                             ></Form.Control>
                             <Button variant="primary" type="submit">
-                                Đăng nhập
+                                {isLoginLoading ? "Đang xử lý..." : "Đăng nhập"}
                             </Button>
-
-                            <Alert variant="danger">
-                                <p>Đã sảy ra lỗi!</p>
-                            </Alert>
+                            {loginError && (
+                                <Alert variant="danger">
+                                    <p>{loginError}</p>
+                                </Alert>
+                            )}
                         </Stack>
                     </Col>
                 </Row>

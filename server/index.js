@@ -3,16 +3,25 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 
-const { userRouter } = require("./Routers/index.js");
-const { registerUser } = require("./Controllers/userController.js");
+const { userRouter, chatRouter, messageRouter } = require("./Routers/index.js");
 
 // config
 require("dotenv").config();
 app.use(express.json());
-app.use(cors());
+app.use(
+    cors({
+        origin: "*",
+    })
+);
 
 // Router
 app.use("/api/user", userRouter);
+app.use("/api/chats", chatRouter);
+app.use("/api/messages", messageRouter);
+
+app.get("/", (req, res) => {
+    res.send("Welcome to chat web api");
+});
 
 const port = process.env.PORT || 5000;
 const mongo_uri = process.env.MONGO_URI || 5000;

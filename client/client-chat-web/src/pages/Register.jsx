@@ -1,13 +1,21 @@
 import { Alert, Button, Form, Row, Col, Stack } from "react-bootstrap";
 import { useContext } from "react";
+
 import { AuthContext } from "../context/AuthContext";
+import { postRequest } from "../utils/services.js";
 
 const Register = () => {
-    const { registerInfo, updateRegisterInfo } = useContext(AuthContext);
+    const {
+        registerInfo,
+        updateRegisterInfo,
+        registerError,
+        registerUser,
+        isRegisterLoading,
+    } = useContext(AuthContext);
 
     return (
         <>
-            <Form>
+            <Form onSubmit={registerUser}>
                 <Row
                     style={{
                         height: "100vh",
@@ -17,7 +25,9 @@ const Register = () => {
                 >
                     <Col xs={6}>
                         <Stack gap={3}>
-                            <h2>Đăng ký</h2>
+                            <h2 style={{ color: "white", textAlign: "center" }}>
+                                Đăng ký
+                            </h2>
                             <Form.Control
                                 type="text"
                                 placeholder="Nhập tên"
@@ -49,12 +59,15 @@ const Register = () => {
                                 }}
                             ></Form.Control>
                             <Button variant="primary" type="submit">
-                                Đăng ký ngay
+                                {isRegisterLoading
+                                    ? "Xử lý đăng ký..."
+                                    : "Đăng ký ngay"}
                             </Button>
-
-                            <Alert variant="danger">
-                                <p>Đã sảy ra lỗi!</p>
-                            </Alert>
+                            {registerError && (
+                                <Alert variant="danger">
+                                    <p>{registerError}</p>
+                                </Alert>
+                            )}
                         </Stack>
                     </Col>
                 </Row>
