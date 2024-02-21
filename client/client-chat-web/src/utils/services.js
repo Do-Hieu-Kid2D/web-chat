@@ -1,4 +1,4 @@
-const baseUrl = "http://127.0.0.1:5000/api";
+const baseUrl = "http://116.99.21.188:5000/api";
 
 export const postRequest = async (url, body) => {
     try {

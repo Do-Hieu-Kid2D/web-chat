@@ -5,6 +5,8 @@ import male_avarter from "../../assets/male_avatar.svg";
 const UserChat = ({ chat, user }) => {
     // console.log(`===>OKE: Chat item`, chat);
     // console.log(`===>OKE: user item`, user);
+    
+    // đây là 1 thằng bên thanh chờ chat
     const { recipientId, recipientUser } = useFetchRecipientUser(chat, user);
 
     // console.log(`===>chat recipientId : `, recipientId);

@@ -15,6 +15,17 @@ export const ChatContextProvider = ({ children, user }) => {
     const [userChatError, setUserChatError] = useState(null);
     const [potentialChats, setPotentialChats] = useState([]);
     const [isReloadUserChats, setIsReloadUserChats] = useState(1);
+
+    // Thằng đang chat với mk
+    const [currentChat, setCurrentChat] = useState(null);
+
+    const [isMessagesLoading, setIsMessagesLoading] = useState(false);
+    const [messageError, setMessageError] = useState(null);
+    const [messages, setMessages] = useState(null);
+
+    // console.log(`===>currentChat: `, currentChat);
+    // console.log(`===>messages : message `, message);
+
     useEffect(() => {
         // Thằng này lọc ra những thằng chưa bao h chat với mk
         // Để làm phần có thể chat tiếp
@@ -68,6 +79,29 @@ export const ChatContextProvider = ({ children, user }) => {
         getUserChats();
     }, [user, isReloadUserChats]);
 
+    const updateCurrentChat = useCallback((chat) => {
+        // chat này là Uer Chat truyền cho
+        setCurrentChat(chat);
+    }, []);
+
+    useEffect(() => {
+        const getMessagesChat = async () => {
+            setIsMessagesLoading(true);
+            setMessageError(null);
+            const response = await getRequest(`/messages/${currentChat?._id}`);
+            // console.log(`===>lấy useEffect: response`, response);
+            setIsMessagesLoading(false);
+
+            if (!response.oke) {
+                return setMessageError(response.data);
+            }
+            // setUserChats(response);
+            console.log(`===>response : getMessagesChat `, response);
+            setMessages(response);
+        };
+        getMessagesChat();
+    }, [currentChat]);
+
     const createChat = useCallback(async (firstId, secondId) => {
         const responseData = await postRequest(
             `/chats`,
@@ -91,6 +125,11 @@ export const ChatContextProvider = ({ children, user }) => {
                 user,
                 potentialChats,
                 createChat,
+                updateCurrentChat,
+                messages,
+                isMessagesLoading,
+                messageError,
+                currentChat,
             }}
         >
             {children}

@@ -3,9 +3,10 @@ import { ChatContext } from "../../context/chatContext";
 import { AuthContext } from "../../context/AuthContext";
 
 const PotentialChats = () => {
+    // Phần user chưa chat bao h với mk ở trên cùng
     const { user } = useContext(AuthContext);
     const { potentialChats, createChat } = useContext(ChatContext);
-    console.log(`===>PotentialChats: `, potentialChats);
+    // console.log(`===>PotentialChats: `, potentialChats);
     return (
         <>
             <div className="all-users">

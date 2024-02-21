@@ -4,12 +4,13 @@ import { ChatContext } from "../context/chatContext";
 import { AuthContext } from "../context/AuthContext";
 import UserChat from "../components/chats/UserChat";
 import PotentialChats from "../components/chats/PotentialChats";
+import ChatBox from "../components/chats/ChatBox";
 
 const Chat = () => {
     // User là thằng đang đăng nhập
     const { user } = useContext(AuthContext);
     // userChats chứa mảng về thằng đang đăng nhập chat với thằng nào để xuống kia map lấy UI
-    const { userChatError, isUserChatLoading, userChats } =
+    const { userChatError, isUserChatLoading, userChats, updateCurrentChat } =
         useContext(ChatContext);
     // console.log(`===>OKE: UserChat với mk: `, userChats);
     // console.log("typeof", typeof userChats);
@@ -28,13 +29,18 @@ const Chat = () => {
 
                         {userChats?.data.map((chat, index) => {
                             return (
-                                <div key={index}>
+                                <div
+                                    key={index}
+                                    onClick={() => {
+                                        updateCurrentChat(chat);
+                                    }}
+                                >
                                     <UserChat chat={chat} user={user} />
                                 </div>
                             );
                         })}
                     </Stack>
-                    <p>Chat box</p>
+                    <ChatBox></ChatBox>
                 </Stack>
             )}
         </Container>
