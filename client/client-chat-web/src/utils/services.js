@@ -15,7 +15,7 @@ export const postRequest = async (url, body) => {
         });
         const responseData = await response.json();
         // console.log(`===>response: `, response);
-        console.log(`===>DATA`, JSON.stringify(responseData));
+        // console.log(`===>DATA postRequest`, JSON.stringify(responseData));
         // Lôi oke = 0
         return responseData;
     } catch (error) {
