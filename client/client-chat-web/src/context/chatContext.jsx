@@ -28,10 +28,13 @@ export const ChatContextProvider = ({ children, user }) => {
     const [newMessage, setNewMessage] = useState(null);
     const [socket, setSocket] = useState(null);
     const [onlineUsers, setOnlineUsers] = useState(null);
+    const [notifications, setNotifications] = useState([]);
+    const [allUsers, setAllUsers] = useState([]);
 
     // console.log(`===>currentChat: 11111111111 `, currentChat);
     // console.log(`===>messages : message111111111 `, JSON.stringify(messages));
     // console.log(`===>onlineUsers :  `, onlineUsers);
+    console.log(`===>notification :  `, notifications);
 
     // init socket lấy socket lưu vào state
     useEffect(() => {
@@ -70,7 +73,18 @@ export const ChatContextProvider = ({ children, user }) => {
         socket.emit("sendMessage", data);
     }, [newMessage]);
 
-    // receive message
+    // useEffect(() => {
+    //     const getNewMessageForCurrentChat = async () => {
+    //         setIsMessagesLoading(true);
+    //         setMessageError(null);
+    //         const response = await getRequest(`/messages/${currentChat.id}`);
+    //         setIsMessagesLoading(false);
+    //         console.log(`===>getNewMessageForCurrentChat: `, response);
+    //         // setMessages(response);
+    //     };
+    // }, [currentChat]);
+
+    // receive message and notifications
     useEffect(() => {
         if (socket === null) {
             console.log(`===> receive message socket === null`);
@@ -85,18 +99,38 @@ export const ChatContextProvider = ({ children, user }) => {
                 console.log(`===>currentChat?._id !== res.chatId:  => return`);
                 return;
             }
-            const chatIdTalk = res.chatId;
-            setIsMessagesLoading(true);
-            setMessageError(null);
-            const response = await getRequest(`/messages/${chatIdTalk}`);
-            setIsMessagesLoading(false);
-            setMessages(response);
+            setMessages((prevMessages) => {
+                return {
+                    ...prevMessages,
+                    data: [...prevMessages.data, res],
+                };
+            });
+        });
+
+        socket.on("getNotification", async (res) => {
+            const isChatOpen = currentChat?.members.includes(res.senderId);
+            if (isChatOpen) {
+                setNotifications((prev) => [{ ...res, isRead: true }, ...prev]);
+            } else {
+                setNotifications((prev) => [res, ...prev]);
+            }
         });
 
         return () => {
             socket.off("getMessage");
+            socket.off("getNotification");
         };
     }, [socket, currentChat]);
+
+    // const chatIdTalk = res.chatId;
+    // setIsMessagesLoading(true);
+    // setMessageError(null);
+    // const response = await getRequest(`/messages/${chatIdTalk}`);
+    // setIsMessagesLoading(false);
+    // setMessages(response);
+    // JSON.parse(
+    //     `{"oke":1,"data":[{"_id":"65d69da2576fec2f8ae0f7e0","chatId":"65d69d97576fec2f8ae0f7d1","senderId":"65d5d595cdf6434876a155a2","message":"1","createdAt":"2024-02-22T01:04:34.465Z","updatedAt":"2024-02-22T01:04:34.465Z","__v":0},{"_id":"65d69df9576fec2f8ae0f7e2","chatId":"65d69d97576fec2f8ae0f7d1","senderId":"65d5d54ecdf6434876a1558f","message":"đó","createdAt":"2024-02-22T01:06:01.667Z","updatedAt":"2024-02-22T01:06:01.667Z","__v":0},{"_id":"65d69e59576fec2f8ae0f830","chatId":"65d69d97576fec2f8ae0f7d1","senderId":"65d5d54ecdf6434876a1558f","message":"res","createdAt":"2024-02-22T01:07:37.622Z","updatedAt":"2024-02-22T01:07:37.622Z","__v":0}]}`
+    // );
 
     useEffect(() => {
         // Thằng này lọc ra những thằng chưa bao h chat với mk
@@ -123,6 +157,7 @@ export const ChatContextProvider = ({ children, user }) => {
                 });
                 // console.log(`===>pChats: `, pChats);
                 setPotentialChats(pChats);
+                setAllUsers(responseData);
             } catch (error) {
                 console.error(`===>ERROR: Lỗi khi lấy all user`, error);
             }
@@ -170,7 +205,10 @@ export const ChatContextProvider = ({ children, user }) => {
                 return setMessageError(response.data);
             }
             // setUserChats(response);
-            console.log(`===>response : getMessagesChat `, response);
+            console.log(
+                `===>currentChat change : getMessagesChat = `,
+                response
+            );
             setMessages(response);
         };
         getMessagesChat();
@@ -193,6 +231,7 @@ export const ChatContextProvider = ({ children, user }) => {
             }
             setNewMessage(response.data);
             setTextMessage("");
+            
             // console.log(`===>messages sendTextMessage : `, messages);
             // push thằng response.data vào messages.data là ăn
             let newStateMessage = { ...messages };
@@ -217,6 +256,13 @@ export const ChatContextProvider = ({ children, user }) => {
         setIsReloadUserChats(timestamp);
     }, []);
 
+    const markAllNoti = useCallback((noti) => {
+        const mNoti = noti.map((n) => {
+            return { ...n, isRead: true };
+        });
+        setNotifications(mNoti);
+    }, []);
+
     return (
         <ChatContext.Provider
             value={{
@@ -233,6 +279,10 @@ export const ChatContextProvider = ({ children, user }) => {
                 currentChat,
                 sendTextMessage,
                 onlineUsers,
+                notifications,
+                allUsers,
+                markAllNoti,
+                newMessage,
             }}
         >
             {children}

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { Container, Stack } from "react-bootstrap";
 // Import Moment.js
 import moment from "moment";
@@ -21,10 +21,17 @@ const ChatBox = () => {
     // Dùng hooks này Sang bên kia lấy thằng vừa được ấn chat với mk
     // console.log(`===>currentChat:hat box: `, currentChat);
     const { recipientUser } = useFetchRecipientUser(currentChat, user);
+    const scroll = useRef();
+    const inputRef = useRef(null);
+
     // console.log(`===>recipientUser Chat box: `, recipientUser);
     // console.log(`===>user Chat box: `, user);
     // console.log(`===>messages Chat box: `, JSON.stringify(messages));
     // console.log(`===>text: `, textMessage);
+
+    useEffect(() => {
+        scroll.current?.scrollIntoView({ behavior: "smooth" });
+    }, [messages]);
 
     const handleKeyDown = (event) => {
         if (event.key === "Enter") {
@@ -76,6 +83,7 @@ const ChatBox = () => {
                                         ? "message self align-self-end flex-grow-0"
                                         : "message align-self-start flex-grow-0"
                                 }`}
+                                ref={scroll}
                             >
                                 <span> {message.message}</span>
                                 <span className="message-footer">
@@ -96,6 +104,7 @@ const ChatBox = () => {
                     fontFamily="nunito"
                     borderColor="rgba(72,112,223,0.2)"
                     onKeyDown={handleKeyDown}
+                    ref={inputRef}
                 />
                 <button
                     className="send-btn"
@@ -106,6 +115,7 @@ const ChatBox = () => {
                             currentChat._id,
                             setTextMessage
                         );
+                        inputRef.current.focus(); // Sau khi gửi tin nhắn, tập trung vào ô nhập văn bản
                     }}
                 >
                     <svg

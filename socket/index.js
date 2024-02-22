@@ -23,7 +23,7 @@ io.on("connection", (Socket) => {
 
     // add message
     Socket.on("sendMessage", (message) => {
-        // console.log(`===>sendMessage: `, message);
+        console.log(`===>have an sendMessage: `, message);
         // cần lấy socket id
         const user = onlineUser.find(
             (user) => user.userId === message.recipientId
@@ -31,6 +31,11 @@ io.on("connection", (Socket) => {
 
         if (user) {
             io.to(user.socketId).emit("getMessage", message);
+            io.to(user.socketId).emit("getNotification", {
+                senderId: message.senderId,
+                isRead: false,
+                date: new Date(),
+            });
             // io.emit("getMessage", message);
         }
     });

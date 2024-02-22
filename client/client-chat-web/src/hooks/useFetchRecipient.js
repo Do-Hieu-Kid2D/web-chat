@@ -14,6 +14,10 @@ export const useFetchRecipientUser = (chat, user) => {
         return id !== user?.id;
     });
 
+    // const other = chat?.members.find((id) => {
+    //     return id == user?.id;
+    // });
+
     // console.log(`===>OKE:typeof recipientId `, typeof recipientId);
     // Lấy được thằng chat với mk trong mảng gồm 2 thằng rồi
     useEffect(() => {

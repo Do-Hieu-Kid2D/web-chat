@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 
 import { AuthContext } from "../context/AuthContext";
+import Notification from "./Notification";
 
 const NavBar = () => {
     const { user, logoutUser } = useContext(AuthContext);
@@ -27,9 +28,18 @@ const NavBar = () => {
                     <Stack direction="horizontal" gap={3}>
                         {user && (
                             <>
+                                <Notification></Notification>
                                 <Link
                                     to="/login"
                                     className="link-light text-decoration-none"
+                                    style={{
+                                        padding: 5,
+                                        background: "#ff6536",
+                                        paddingRight: 10,
+                                        paddingLeft: 10,
+                                        borderRadius: 20,
+                                        marginLeft: 10,
+                                    }}
                                     onClick={() => {
                                         logoutUser();
                                     }}
@@ -45,12 +55,27 @@ const NavBar = () => {
                                 <Link
                                     to="/login"
                                     className="link-light text-decoration-none"
+                                    style={{
+                                        padding: 5,
+                                        background: "#ff6536",
+                                        paddingRight: 10,
+                                        paddingLeft: 10,
+                                        borderRadius: 20,
+                                        marginRight: 10,
+                                    }}
                                 >
                                     Login
                                 </Link>
                                 <Link
                                     to="/register"
                                     className="link-light text-decoration-none"
+                                    style={{
+                                        padding: 5,
+                                        background: "#ff6536",
+                                        paddingRight: 10,
+                                        paddingLeft: 10,
+                                        borderRadius: 20,
+                                    }}
                                 >
                                     Register
                                 </Link>
