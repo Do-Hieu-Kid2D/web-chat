@@ -1,6 +1,6 @@
 const { Server, Socket } = require("socket.io");
 
-const io = new Server({ cors: "http://localhost:5173" });
+const io = new Server({ cors: "*" });
 
 let onlineUser = [];
 

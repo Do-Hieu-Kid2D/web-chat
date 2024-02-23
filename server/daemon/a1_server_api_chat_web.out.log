@@ -1,0 +1,217 @@
+Sever Nodejs đang lắng nghe tại đường http://localhost:5100
+===>OKE: Kết nối MOGODB thành công!
+New connection: Xze-9jfE3BkVE_MBAAAC
+===>onlineUser  : [
+  {
+    userId: '65d6e5ea7b435bea146a0ba6',
+    socketId: 'Xze-9jfE3BkVE_MBAAAC'
+  }
+]
+New connection: 65MBooh0kihvlqnbAAAF
+===>onlineUser  : [
+  {
+    userId: '65d6e5ea7b435bea146a0ba6',
+    socketId: '65MBooh0kihvlqnbAAAF'
+  }
+]
+New connection: d1USeY4aOnej9smCAAAI
+===>onlineUser  : [
+  {
+    userId: '65d6e5ea7b435bea146a0ba6',
+    socketId: 'd1USeY4aOnej9smCAAAI'
+  }
+]
+New connection: qvSIwESFM00fSSdyAAAK
+===>onlineUser  : [ { userId: null, socketId: 'qvSIwESFM00fSSdyAAAK' } ]
+New connection: dV4tS7oHBQs8gVcFAAAM
+===>onlineUser  : [ { userId: null, socketId: 'dV4tS7oHBQs8gVcFAAAM' } ]
+ĐĂNG KÝ USER: Administrator administrator@gmail.com 1111111
+ĐĂNG KÝ USER: Administrator administrator@gmail.com 11111111
+===>OKE: registerUser {
+  name: 'Administrator',
+  email: 'administrator@gmail.com',
+  password: '$2b$10$g2Bh5IDql1eSk1WLgZ.2duanPDAoJlHAgJ77hHA7WqzrppPGGcpFS',
+  _id: new ObjectId('65d74d1bff3465fd14d5ef52'),
+  createdAt: 2024-02-22T13:33:15.760Z,
+  updatedAt: 2024-02-22T13:33:15.760Z,
+  __v: 0
+}
+===> OKE: NEW TOKEN:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRtaW5pc3RyYXRvciIsImVtYWlsIjoiYWRtaW5pc3RyYXRvckBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRnMkJoNUlEcWwxZVNrMVdMZ1ouMmR1YW5QREFvSmxIQWdKNzdoSEE3V3F6cnBwUEdHY3BGUyIsIl9pZCI6IjY1ZDc0ZDFiZmYzNDY1ZmQxNGQ1ZWY1MiIsImNyZWF0ZWRBdCI6IjIwMjQtMDItMjJUMTM6MzM6MTUuNzYwWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDItMjJUMTM6MzM6MTUuNzYwWiIsIl9fdiI6MCwiaWF0IjoxNzA4NjA4Nzk1LCJleHAiOjE3MDg2MTIzOTV9.oNO882EgVclqMAZ7WPLgn9WVVKgFUpfyfIaaFWJnlTU
+New connection: k_UvioIypev0U3JfAAAO
+===>onlineUser  : [
+  {
+    userId: '65d74d1bff3465fd14d5ef52',
+    socketId: 'k_UvioIypev0U3JfAAAO'
+  }
+]
+New connection: 1kXmwkharOSkG4qgAAAQ
+===>onlineUser  : [
+  {
+    userId: '65d74d1bff3465fd14d5ef52',
+    socketId: 'k_UvioIypev0U3JfAAAO'
+  },
+  { userId: null, socketId: '1kXmwkharOSkG4qgAAAQ' }
+]
+ĐĂNG KÝ USER: mango fsdfs@gmail.com 123
+ĐĂNG KÝ USER: mango fsdfs@gmail.com hieuancut
+===>OKE: registerUser {
+  name: 'mango',
+  email: 'fsdfs@gmail.com',
+  password: '$2b$10$sFWcHplqImqqHI5XKSooj.Lk9FU7HjxKj.w2HMEpVAvwYqcCbDdvS',
+  _id: new ObjectId('65d74e1fff3465fd14d5ef5a'),
+  createdAt: 2024-02-22T13:37:35.786Z,
+  updatedAt: 2024-02-22T13:37:35.786Z,
+  __v: 0
+}
+===> OKE: NEW TOKEN:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFuZ28iLCJlbWFpbCI6ImZzZGZzQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJHNGV2NIcGxxSW1xcUhJNVhLU29vai5MazlGVTdIanhLai53MkhNRXBWQXZ3WXFjQ2JEZHZTIiwiX2lkIjoiNjVkNzRlMWZmZjM0NjVmZDE0ZDVlZjVhIiwiY3JlYXRlZEF0IjoiMjAyNC0wMi0yMlQxMzozNzozNS43ODZaIiwidXBkYXRlZEF0IjoiMjAyNC0wMi0yMlQxMzozNzozNS43ODZaIiwiX192IjowLCJpYXQiOjE3MDg2MDkwNTUsImV4cCI6MTcwODYxMjY1NX0.WF9Rnl_mBFFSADWoXB5sJWh-okArz6wOFKHm9_HGM_A
+New connection: wJwptk0F2U7L085yAAAS
+===>onlineUser  : [
+  {
+    userId: '65d74e1fff3465fd14d5ef5a',
+    socketId: 'wJwptk0F2U7L085yAAAS'
+  }
+]
+New connection: CMWC9ACE3RgxRdweAAAV
+===>onlineUser  : [
+  {
+    userId: '65d74e1fff3465fd14d5ef5a',
+    socketId: 'wJwptk0F2U7L085yAAAS'
+  },
+  {
+    userId: '65d74d1bff3465fd14d5ef52',
+    socketId: 'CMWC9ACE3RgxRdweAAAV'
+  }
+]
+New connection: sQ9GJYeB7XF4dPftAAAY
+===>onlineUser  : [
+  {
+    userId: '65d74e1fff3465fd14d5ef5a',
+    socketId: 'wJwptk0F2U7L085yAAAS'
+  },
+  {
+    userId: '65d74d1bff3465fd14d5ef52',
+    socketId: 'sQ9GJYeB7XF4dPftAAAY'
+  }
+]
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74e1fff3465fd14d5ef5a',
+  message: 'địt mẹ m',
+  _id: '65d74e32ff3465fd14d5ef73',
+  createdAt: '2024-02-22T13:37:54.583Z',
+  updatedAt: '2024-02-22T13:37:54.583Z',
+  __v: 0,
+  recipientId: '65d74d1bff3465fd14d5ef52'
+}
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74d1bff3465fd14d5ef52',
+  message: 'pkon kax',
+  _id: '65d74e36ff3465fd14d5ef77',
+  createdAt: '2024-02-22T13:37:58.859Z',
+  updatedAt: '2024-02-22T13:37:58.859Z',
+  __v: 0,
+  recipientId: '65d74e1fff3465fd14d5ef5a'
+}
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74d1bff3465fd14d5ef52',
+  message: 'con kac',
+  _id: '65d74e3aff3465fd14d5ef7b',
+  createdAt: '2024-02-22T13:38:02.314Z',
+  updatedAt: '2024-02-22T13:38:02.314Z',
+  __v: 0,
+  recipientId: '65d74e1fff3465fd14d5ef5a'
+}
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74d1bff3465fd14d5ef52',
+  message: 'oke',
+  _id: '65d74e3dff3465fd14d5ef7f',
+  createdAt: '2024-02-22T13:38:05.202Z',
+  updatedAt: '2024-02-22T13:38:05.202Z',
+  __v: 0,
+  recipientId: '65d74e1fff3465fd14d5ef5a'
+}
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74e1fff3465fd14d5ef5a',
+  message: 'e nói là tôi là hiếu',
+  _id: '65d74e40ff3465fd14d5ef83',
+  createdAt: '2024-02-22T13:38:08.686Z',
+  updatedAt: '2024-02-22T13:38:08.686Z',
+  __v: 0,
+  recipientId: '65d74d1bff3465fd14d5ef52'
+}
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74d1bff3465fd14d5ef52',
+  message: 'tôi là man gô',
+  _id: '65d74e47ff3465fd14d5ef87',
+  createdAt: '2024-02-22T13:38:15.027Z',
+  updatedAt: '2024-02-22T13:38:15.027Z',
+  __v: 0,
+  recipientId: '65d74e1fff3465fd14d5ef5a'
+}
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74e1fff3465fd14d5ef5a',
+  message: 'tôi thích ăn cứt',
+  _id: '65d74e4bff3465fd14d5ef8b',
+  createdAt: '2024-02-22T13:38:19.703Z',
+  updatedAt: '2024-02-22T13:38:19.703Z',
+  __v: 0,
+  recipientId: '65d74d1bff3465fd14d5ef52'
+}
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74d1bff3465fd14d5ef52',
+  message: 'bạn là ai',
+  _id: '65d74e4bff3465fd14d5ef8f',
+  createdAt: '2024-02-22T13:38:19.958Z',
+  updatedAt: '2024-02-22T13:38:19.958Z',
+  __v: 0,
+  recipientId: '65d74e1fff3465fd14d5ef5a'
+}
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74d1bff3465fd14d5ef52',
+  message: 'cc',
+  _id: '65d74e51ff3465fd14d5ef93',
+  createdAt: '2024-02-22T13:38:25.184Z',
+  updatedAt: '2024-02-22T13:38:25.184Z',
+  __v: 0,
+  recipientId: '65d74e1fff3465fd14d5ef5a'
+}
+New connection: r9tXgz6iCFGDmxMJAAAb
+===>onlineUser  : [
+  {
+    userId: '65d74e1fff3465fd14d5ef5a',
+    socketId: 'wJwptk0F2U7L085yAAAS'
+  },
+  {
+    userId: '65d74d1bff3465fd14d5ef52',
+    socketId: 'r9tXgz6iCFGDmxMJAAAb'
+  }
+]
+===>have an sendMessage:  {
+  chatId: '65d74e2dff3465fd14d5ef63',
+  senderId: '65d74e1fff3465fd14d5ef5a',
+  message: 'fdgdfgdfg',
+  _id: '65d74e64ff3465fd14d5ef9d',
+  createdAt: '2024-02-22T13:38:44.591Z',
+  updatedAt: '2024-02-22T13:38:44.591Z',
+  __v: 0,
+  recipientId: '65d74d1bff3465fd14d5ef52'
+}
+New connection: LTZsgmvMeeu1B2kUAAAe
+===>onlineUser  : [
+  {
+    userId: '65d74e1fff3465fd14d5ef5a',
+    socketId: 'wJwptk0F2U7L085yAAAS'
+  },
+  {
+    userId: '65d74d1bff3465fd14d5ef52',
+    socketId: 'LTZsgmvMeeu1B2kUAAAe'
+  }
+]

@@ -38,7 +38,7 @@ export const ChatContextProvider = ({ children, user }) => {
 
     // init socket lấy socket lưu vào state
     useEffect(() => {
-        const newSocket = io("http://localhost:3000");
+        const newSocket = io("http://routerdkid.ddns.net:5100");
         setSocket(newSocket);
 
         return () => {
@@ -231,7 +231,7 @@ export const ChatContextProvider = ({ children, user }) => {
             }
             setNewMessage(response.data);
             setTextMessage("");
-            
+
             // console.log(`===>messages sendTextMessage : `, messages);
             // push thằng response.data vào messages.data là ăn
             let newStateMessage = { ...messages };

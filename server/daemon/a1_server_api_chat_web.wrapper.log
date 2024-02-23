@@ -1,0 +1,2 @@
+2024-02-22 20:22:33 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-22 20:22:33 - Started 40528
