@@ -1,0 +1,12 @@
+===>ERROR: K QUA TƯỜNG LỬA
+===>ERROR: K QUA TƯỜNG LỬA
+===>ERROR All login:  Error: data and hash arguments required
+    at Object.compare (E:\work_code\REACT_JS\chat-app\server\node_modules\bcrypt\bcrypt.js:208:17)
+    at E:\work_code\REACT_JS\chat-app\server\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at module.exports.promise (E:\work_code\REACT_JS\chat-app\server\node_modules\bcrypt\promises.js:20:12)
+    at Object.compare (E:\work_code\REACT_JS\chat-app\server\node_modules\bcrypt\bcrypt.js:204:25)
+    at loginUser (E:\work_code\REACT_JS\chat-app\server\Controllers\userController.js:105:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+===>ERROR: K QUA TƯỜNG LỬA
+===>ERROR: K QUA TƯỜNG LỬA

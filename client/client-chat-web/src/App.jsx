@@ -24,7 +24,7 @@ function App() {
             <NavBar />
             <Container>
                 <Routes>
-                    <Route path="/" element={<Chat />} />
+                    <Route path="/" element={user ? <Chat /> : <Login />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                 </Routes>
