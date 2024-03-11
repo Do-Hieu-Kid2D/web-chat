@@ -1,2 +1,28 @@
-2024-02-22 20:22:33 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
-2024-02-22 20:22:33 - Started 40528
+2024-02-27 14:09:25 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-27 14:09:25 - Started 21600
+2024-03-01 12:15:12 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-01 12:15:12 - Started 8508
+2024-03-02 22:05:45 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-02 22:05:45 - Started 8748
+2024-03-05 21:41:45 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-05 21:41:45 - Started 8620
+2024-03-10 20:53:47 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-10 20:53:47 - Started 8636
+2024-03-10 23:29:13 - Stopping a1_server_api_chat_web.exe
+2024-03-10 23:29:13 - ProcessKill 8636
+2024-03-10 23:29:14 - Found child process: 8652 Name: conhost.exe
+2024-03-10 23:29:14 - Found child process: 9588 Name: node.exe
+2024-03-10 23:29:14 - Stopping process 8652
+2024-03-10 23:29:14 - Send SIGINT 8652
+2024-03-10 23:29:14 - SIGINT to 8652 failed - Killing as fallback
+2024-03-10 23:29:14 - Stopping process 9588
+2024-03-10 23:29:14 - Send SIGINT 9588
+2024-03-10 23:29:14 - SIGINT to 9588 failed - Killing as fallback
+2024-03-10 23:29:14 - Stopping process 8636
+2024-03-10 23:29:14 - Send SIGINT 8636
+2024-03-10 23:29:14 - SIGINT to 8636 failed - Killing as fallback
+2024-03-10 23:29:14 - Finished a1_server_api_chat_web.exe
+2024-03-10 23:29:16 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-10 23:29:16 - Started 18060
+2024-03-11 12:20:12 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 E:\work_code\REACT_JS\chat-app\server\node_modules\node-windows\lib\wrapper.js --file E:\work_code\REACT_JS\chat-app\server\index.js --scriptoptions= --log "A1_server_api_chat_web wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-11 12:20:12 - Started 8896

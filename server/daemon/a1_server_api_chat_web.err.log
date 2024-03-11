@@ -1,12 +1,109 @@
+===>ERR: kết nối MONGODB thất bại! querySrv ECONNREFUSED _mongodb._tcp.atlascluster.h3j6a51.mongodb.net
+===>ERR: kết nối MONGODB thất bại! Server selection timed out after 30000 ms
+===>ERROR: createMessage MongooseError: Operation `messages.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR  ALL getUsers:  MongooseError: Operation `users.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR All login:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR ALL register:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR: createMessage MongooseError: Operation `messages.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR  ALL getUsers:  MongooseError: Operation `users.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR: findUserChat  MongooseError: Operation `chats.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR  ALL getUsers:  MongooseError: Operation `users.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR: createMessage MongooseError: Operation `messages.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR: findUserChat  MongooseError: Operation `chats.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR  ALL getUsers:  MongooseError: Operation `users.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR: createMessage MongooseError: Operation `messages.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR: findUserChat  MongooseError: Operation `chats.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR ALL register:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR ALL register:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+===>ERROR ALL register:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (E:\work_code\REACT_JS\chat-app\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
 ===>ERROR: K QUA TƯỜNG LỬA
-===>ERROR: K QUA TƯỜNG LỬA
-===>ERROR All login:  Error: data and hash arguments required
-    at Object.compare (E:\work_code\REACT_JS\chat-app\server\node_modules\bcrypt\bcrypt.js:208:17)
-    at E:\work_code\REACT_JS\chat-app\server\node_modules\bcrypt\promises.js:29:12
-    at new Promise (<anonymous>)
-    at module.exports.promise (E:\work_code\REACT_JS\chat-app\server\node_modules\bcrypt\promises.js:20:12)
-    at Object.compare (E:\work_code\REACT_JS\chat-app\server\node_modules\bcrypt\bcrypt.js:204:25)
-    at loginUser (E:\work_code\REACT_JS\chat-app\server\Controllers\userController.js:105:46)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 ===>ERROR: K QUA TƯỜNG LỬA
 ===>ERROR: K QUA TƯỜNG LỬA

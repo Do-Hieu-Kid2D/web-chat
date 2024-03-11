@@ -34,6 +34,28 @@ app.get("/", (req, res) => {
     res.send("Welcome to chat web api");
 });
 
+app.get("/api/dataiot", (req, res) => {
+    fetch("http://192.168.1.103:1880/data")
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(`===>response json: `, data);
+            res.send(data);
+        })
+        .catch((err) => {
+            console.error(`===>ERROR: Lỗi lấy data Raspberry!`, err);
+            res.send(
+                `<h1 style="color:red;text-align:center" >LỖI ÁC ANH ƠI </h1> <h3 style="color:#cc6600;text-align:center" >Lỗi lấy data Raspberry! Chắc thằng này chưa bật Senhat Emulator thì nó lấy bằng mắt</h3>`
+            );
+        });
+});
+
+app.get("/api/online", (req, res) => {
+    res.json({
+        oke: 1,
+        data: onlineUser.length,
+    });
+});
+
 const port = process.env.PORT || 5100;
 const mongo_uri = process.env.MONGO_URI;
 

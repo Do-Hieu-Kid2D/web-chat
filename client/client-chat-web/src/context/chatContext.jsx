@@ -84,6 +84,7 @@ export const ChatContextProvider = ({ children, user }) => {
     //     };
     // }, [currentChat]);
 
+
     // receive message and notifications
     useEffect(() => {
         if (socket === null) {
@@ -121,16 +122,6 @@ export const ChatContextProvider = ({ children, user }) => {
             socket.off("getNotification");
         };
     }, [socket, currentChat]);
-
-    // const chatIdTalk = res.chatId;
-    // setIsMessagesLoading(true);
-    // setMessageError(null);
-    // const response = await getRequest(`/messages/${chatIdTalk}`);
-    // setIsMessagesLoading(false);
-    // setMessages(response);
-    // JSON.parse(
-    //     `{"oke":1,"data":[{"_id":"65d69da2576fec2f8ae0f7e0","chatId":"65d69d97576fec2f8ae0f7d1","senderId":"65d5d595cdf6434876a155a2","message":"1","createdAt":"2024-02-22T01:04:34.465Z","updatedAt":"2024-02-22T01:04:34.465Z","__v":0},{"_id":"65d69df9576fec2f8ae0f7e2","chatId":"65d69d97576fec2f8ae0f7d1","senderId":"65d5d54ecdf6434876a1558f","message":"đó","createdAt":"2024-02-22T01:06:01.667Z","updatedAt":"2024-02-22T01:06:01.667Z","__v":0},{"_id":"65d69e59576fec2f8ae0f830","chatId":"65d69d97576fec2f8ae0f7d1","senderId":"65d5d54ecdf6434876a1558f","message":"res","createdAt":"2024-02-22T01:07:37.622Z","updatedAt":"2024-02-22T01:07:37.622Z","__v":0}]}`
-    // );
 
     useEffect(() => {
         // Thằng này lọc ra những thằng chưa bao h chat với mk
